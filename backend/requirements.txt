@@ -1,0 +1,14 @@
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+python-dotenv==1.1.1
+httpx==0.28.1
+pydantic==2.11.7
+sarvamai>=0.1.0
+tavily-python>=0.7.11
+beautifulsoup4==4.13.4
+python-multipart>=0.0.20
+pypdf>=6.0.0
+python-docx>=1.2.0
+Pillow>=11.3.0
+pytesseract>=0.3.13
+requests==2.32.5

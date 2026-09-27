@@ -1,0 +1,15 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mailon</title><link rel="stylesheet" href="panel.css"></head><body><main>
+<header><div class="brand"><div class="logo">M</div><div><b>Mailon</b><small>Evidence Trust • 2030</small></div></div><button id="close">×</button></header>
+<section class="hero"><img src="assets/mailon.svg"><div id="speech">Hi! I can verify content, find evidence, understand files and speak Indian languages.</div></section>
+<nav><button class="tab active" data-tab="verify">Verify</button><button class="tab" data-tab="search">Find verified info</button></nav>
+<section id="verify" class="card"><h3>What are we checking?</h3><div class="row"><select id="category"><option>general</option><option>news</option><option>job</option><option>advertisement</option><option>email</option><option>website</option><option>document</option></select><select id="language"><option value="en-IN">English</option><option value="ta-IN">Tamil</option><option value="hi-IN">Hindi</option><option value="te-IN">Telugu</option><option value="kn-IN">Kannada</option><option value="ml-IN">Malayalam</option></select></div>
+<div class="modes"><button data-mode="page">🌐 Page</button><button data-mode="text" class="sel">✍️ Text</button><button data-mode="url">🔗 URL</button><button data-mode="file">📎 File/Image</button></div>
+<textarea id="text" placeholder="Paste a claim, job, email, ad or message..."></textarea><input id="url" class="hide" placeholder="https://example.com"><input id="file" class="hide" type="file" accept=".txt,.md,.csv,.json,.pdf,.docx,.png,.jpg,.jpeg,.webp">
+<div class="buttons"><button id="mic" class="secondary">🎙️ Voice</button><button id="analyze" class="primary">✨ Ask Mailon</button></div><div id="result"></div></section>
+<section id="search" class="card hide"><h3>What verified information do you need?</h3><input id="query" placeholder="recent data analyst jobs in India"><button id="searchBtn" class="primary">🔎 Search evidence</button><div id="searchResult"></div></section>
+<div class="tools">
+  <button id="translate">🌍 Translate</button>
+  <button id="speak">🔊 Speak</button>
+  <button id="pauseSpeech">⏸ Pause</button>
+  <button id="stopSpeech">⏹ Stop</button>
+</div><footer>Mailon checks evidence — you make the final decision.</footer></main><script src="panel.js"></script></body></html>
